@@ -11,6 +11,9 @@ $(DST)\demo.exe: $(INT)\demo.obj $(DST)\my_common_lib.dll
 
 $(DST)\my_common_lib.dll: $(INT)\my_common_lib.obj
 	$(CXX) $(CXXFLAGS) /LD $**
+	copy $(SRC)\my_common_lib.h $(DST)\
 
 {$(SRC)\}.cpp{$(INT)\}.obj::
 	$(CXX) $(CXXFLAGS) /c $<
+
+clean:; del /Q $(INT)\*.* $(DST)\*.*
