@@ -3,6 +3,6 @@
 
 bool my_func_a(const char* in_str, char* out_str) {
     std::cout << "in_str: " << in_str << std::endl;
-    strcpy(out_str, "output arg is updated.");
+    strcpy(out_str, "“ú–{Œê(‚ÆASCII)‚ğŠÜ‚Ş•¶š—ñ");
     return (strlen(in_str) < 5);
 }

@@ -6,7 +6,7 @@ namespace DemoApp {
     class Program {
         static void Main(string[] args) {
             StringBuilder outBuf = new StringBuilder(256);
-            NativeMethods.my_func_a("hogehoge", outBuf);
+            NativeMethods.my_func_a("“ú–{Œê‚ÆEnglish", outBuf);
             Console.WriteLine(outBuf.ToString());
         }
     }
