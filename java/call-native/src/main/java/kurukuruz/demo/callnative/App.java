@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
     	byte[] buf = new byte[256];
-    	boolean result = NativeMethods.INSTANCE.my_func_a("“ú–{Œê‚ÆEnglish", buf);
+    	boolean result = NativeMethods.INSTANCE.my_func_a("Java‚©‚ç•¶Žš—ñ", buf);
     	System.out.println("result: " + result);
     	System.out.println("out_str: " + Native.toString(buf));
     }
